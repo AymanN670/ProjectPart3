@@ -1,0 +1,44 @@
+body {
+    background: linear-gradient(to right, #f7a8b8, #f3b8c1);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container to hold everything */
+.container {
+    display: flex; /* Arrange images horizontally */
+    justify-content: space-between; /* Add space between images */
+    align-items: flex-start; /* Align items at the top */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+
+
+/* Styling for each section (image + text) */
+.section {
+    text-align: center;
+    width: 30%; /* Adjust width to fit three items in a row */
+}
+
+/* Image size styling */
+.section img {
+    margin-top: 100px;
+    width: 200px; /* Set image width */
+    height: auto;
+}
+
+/* Text styling */
+.section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 10px; /* Space between image and text */
+}
+
+p {
+    text-align: center;
+    font-size: medium;
+    color: #4e4b47;
+}

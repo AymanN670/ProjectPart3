@@ -1,0 +1,45 @@
+body {
+    background: linear-gradient(to right, #f7a8b8, #f3b8c1);
+}
+/* Global Container Styling */
+.container {
+    width: 80%;  /* Adjusts container width */
+    margin: 0 auto;  /* Centers the container */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+.container h2 {
+    text-align: center; /* Center the header text */
+    font-size: 2rem;
+    color: #4e4b47;  /* Brown color for the header */
+    margin-bottom: 40px; /* Space below the header */
+}
+
+/* Section Styling */
+.section {
+    display: flex;
+    align-items: center; /* Vertically align items */
+    margin-bottom: 30px; /* Space between sections */
+    text-align: left; /* Align text to the left */
+}
+
+/* Image Styling */
+.section img {
+    border-radius: 10px;
+    margin-right: 20px; /* Space between image and text */
+}
+
+/* Text Styling inside each section */
+.section p {
+    font-size: 1rem;
+    color: #4e4b47; /* Brown color for text */
+    max-width: 600px;  /* Limiting text width */
+}
+
+/* Additional styling for sections that have more text */
+.section p:nth-of-type(2) {
+    margin-top: 10px;
+    font-size: 1.1rem;  /* Slightly larger text for additional descriptions */
+}
