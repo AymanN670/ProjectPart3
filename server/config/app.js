@@ -33,6 +33,17 @@ mongoDB.once('open', () => {
   console.log('MongoDB Connected');
 });
 
+let DB = process.env.MONGO_URI;  // Get the MongoDB URI from environment variables
+
+mongoose.connect(DB, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => {
+    console.log('MongoDB Connected');
+  })
+  .catch((err) => {
+    console.error('MongoDB Connection Error:', err);
+  });
+
+
 let app = express();
 
 // Set up express-session
